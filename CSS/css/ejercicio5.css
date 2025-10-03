@@ -1,0 +1,35 @@
+/* CSS HEX 
+Paleta cogida de Coolors */
+/* root hace referencia al documento */
+:root{
+    --space-cadet: #2b2d42ff;
+    --non-photo-blue: #92dce5ff;
+    --seasalt: rgb(190, 168, 117);
+    --maize: #f7ec59ff;
+}
+
+@font-face {
+    font-family: "Saira";
+    src: url("Saira-VariableFont_wdth\,wght.ttf");
+}
+*{
+    font-family: 'Saira';
+}
+.parrafo_destacado{
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--non-photo-blue);
+}
+.parrafo_estandar{
+    font-size: 1.2rem;
+    color: var(--maize);
+}
+h1{
+    color: var(--space-cadet);
+}
+h2{
+    color: var(--space-cadet);
+}
+p{
+    color: var(--seasalt);
+}

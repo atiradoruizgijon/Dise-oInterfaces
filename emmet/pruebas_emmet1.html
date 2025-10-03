@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Ejercicio 1 -->
+    <!-- ol>li*7 -->
+    <ol>
+        <li>0</li>
+        <li>0</li>
+        <li>0</li>
+        <li>0</li>
+        <li>0</li>
+        <li>0</li>
+        <li>0</li>
+    </ol>
+
+    <!-- Ejercicio 2 -->
+    <!-- table>tr*6>td*8{hola} -->
+    <table>
+        <tr>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+        </tr>
+        <tr>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+        </tr>
+        <tr>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+        </tr>
+        <tr>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+        </tr>
+        <tr>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+        </tr>
+        <tr>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+            <td>hola</td>
+        </tr>
+    </table>
+
+    <!-- Ejercicio 3 -->
+    <!-- ul>li.elemlist$*10   -->
+    <ul>
+        <li class="elemlist1">hola</li>
+        <li class="elemlist2">hola</li>
+        <li class="elemlist3">hola</li>
+        <li class="elemlist4">hola</li>
+        <li class="elemlist5">hola</li>
+        <li class="elemlist6">hola</li>
+        <li class="elemlist7">hola</li>
+        <li class="elemlist8">hola</li>
+        <li class="elemlist9">hola</li>
+        <li class="elemlist10">hola</li>
+    </ul>
+
+    <!-- Ejercicio 4 -->
+    <!-- a[href="www.google.es"]{Pinche aquí}+div>h1.titulares$*2 -->
+    <a href="https://www.google.es">Pinche aquí</a>
+    <div>
+        <h1 class="titulares1"></h1>
+        <h1 class="titulares2"></h1>
+    </div>
+
+    <!-- Ejercicio 5 -->
+
+    <!-- Un formulario que use el método post, con el atributo action="procesar.php"
+       y  que contenga tres campos de texto, un botón de envío y otro de reset. Todos los
+        elementos deben tener sus etiquetas correspondientes (label) relacionadas a través 
+        del atributo for con el campo correspondiente. -->
+
+    <!-- form[action="procesar.php" method="post"]>(label[for="texto"]{texto}*3>input#texto[type="text" name="texto"])+label[for="enviar"]{enviar}+input#enviar[type="submit" name="enviar"]+label[for="reset"]{reset}+input#reset[type="reset" name="reset"] -->
+    <form action="procesar.php" method="post">
+        <label for="texto">texto<input type="text" name="texto" id="texto"></label>
+        <label for="texto">texto<input type="text" name="texto" id="texto"></label>
+        <label for="texto">texto<input type="text" name="texto" id="texto"></label>
+        <label for="enviar">enviar</label><input type="submit" name="enviar" id="enviar" value="Enviar">
+        <label for="reset">reset</label><input type="reset" name="reset" id="reset">
+    </form> 
+
+</body>
+
+</html>

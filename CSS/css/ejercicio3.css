@@ -1,0 +1,26 @@
+/* CSS HEX 
+Paleta cogida de Coolors */
+
+.parrafo_destacado{
+    --space-cadet: #2b2d42ff;
+    --non-photo-blue: #92dce5ff;
+    --seasalt: #f8f7f9ff;
+    --maize: #f7ec59ff;
+
+    font-size: 0.8rem;
+    font-style: italic;
+    color: var(--non-photo-blue);
+}
+.parrafo_estandar{
+    font-size: 1.2rem;
+    color: var(--maize);
+}
+h1{
+    color: var(--space-cadet);
+}
+h2{
+    color: var(--space-cadet);
+}
+p{
+    color: var(--seasalt);
+}

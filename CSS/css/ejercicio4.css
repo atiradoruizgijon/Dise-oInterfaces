@@ -1,0 +1,21 @@
+h1{
+    --space-cadet: #2b2d42ff;
+    --non-photo-blue: #92dce5ff;
+    --seasalt: #f8f7f9ff;
+    --maize: #f7ec59ff;
+
+    color: var(--space-cadet);
+}
+h2{
+    color: var(--space-cadet);
+}
+#definicion{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--maize);
+}
+#parrafo_especial{
+    font-size: 14px;
+    font-style: italic;
+    color: var(--non-photo-blue);
+}
