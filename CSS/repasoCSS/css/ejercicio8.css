@@ -1,0 +1,10 @@
+thead{
+    background-color: lawngreen;
+}
+tbody > tr:last-child{
+    background-color: darkred;
+    color: white;
+}
+td{
+    border-bottom: 1px solid black;
+}

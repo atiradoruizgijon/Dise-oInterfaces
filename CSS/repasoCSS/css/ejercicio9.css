@@ -1,0 +1,13 @@
+a[title="Go to google"]{
+    font-size: 15px;
+    border: 1px orangered dashed;
+}
+img[alt="random image"]{
+    font-size: 10px;
+    font-style: italic;
+    border: 1px dashed darkred;
+}
+img[alt="logo"]{
+    font-size: 11px;
+    border: 1px dashed green;
+}

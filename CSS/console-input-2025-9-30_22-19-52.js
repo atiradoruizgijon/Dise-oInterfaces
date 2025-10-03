@@ -1,1 +1,0 @@
-let edad = prompt("Dime tu edad");
