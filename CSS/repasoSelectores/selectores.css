@@ -10,7 +10,7 @@ h2, h3{
 h1, h2, h3{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-div > a{
+nav a{
     text-decoration: none;
 }
 main p{
@@ -37,6 +37,7 @@ main ~ * {
 }
 h2 + article{
     background-color: bisque;
+    width: 200px;
 }
 img[alt]{
     width: 200px;
