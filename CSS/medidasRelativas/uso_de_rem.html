@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-family: sans-serif;
+            /* Tamaño de fuente root */
+            font-size: 20px;
+        }
+        /* 1rem == 16px 
+           ahora despues de poner 20px en html
+           1rem == 20px
+
+           rem = relativo al tamaño fuente del html
+           de normal son 16px ya que suele ser el por defecto del navegador
+        */
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+        .caja1 {
+            border: 3px solid black;
+            width: 50rem;
+            background-color: cadetblue;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Probando em y rem</h1>
+    <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. In impedit, facere perferendis, aliquam deserunt laboriosam cum molestiae dolorum, alias fugiat vitae tempore veniam recusandae doloribus dicta magni voluptas eius? Quis?</p>
+
+    <div class="caja1">
+        <p>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic debitis perspiciatis aperiam fugiat dolores nihil ab fuga consequatur commodi quia? At corrupti nemo facilis quam recusandae laboriosam est ratione saepe.</p>
+    </div>
+
+    <div class="caja2">
+        <p>3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quasi adipisci excepturi impedit tenetur? Fugit culpa sapiente nulla deleniti natus velit illum corrupti hic autem accusamus. Corporis ratione libero fugit.</p>
+    </div>
+
+    <div class="caja3">
+        <p>4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis autem repudiandae reiciendis, maiores harum, totam sint laudantium exercitationem dignissimos quidem, minus quia. Illo deserunt autem id. Nam ut facilis natus.</p>
+        <div class="caja2">
+            <p>3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quasi adipisci excepturi impedit tenetur? Fugit culpa sapiente nulla deleniti natus velit illum corrupti hic autem accusamus. Corporis ratione libero fugit.</p>
+        </div>
+    </div>
+</body>
+</html>
