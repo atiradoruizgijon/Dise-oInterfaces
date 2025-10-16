@@ -1,0 +1,20 @@
+nav {
+    display: table;
+}
+ul {
+    display: table-row;
+}
+li {
+    display: table-cell;
+    padding: 15px;
+}
+li:nth-child(odd) {
+    background-color: orange;
+}
+li:nth-child(even) {
+    background-color: green;
+}
+a {
+    cursor: crosshair;
+    text-decoration: none;
+}
