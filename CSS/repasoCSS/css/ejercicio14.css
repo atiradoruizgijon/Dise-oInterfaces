@@ -1,0 +1,29 @@
+html {
+    font-family: sans-serif;
+}
+div {
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: auto;
+}
+img {
+    width: 150px;
+}
+h1 {
+    text-align: center;
+}
+div img:first-child {
+    float: right;
+}
+div img:nth-of-type(2), div img:nth-of-type(3) {
+    float: left;
+}
+div p:nth-of-type(2) {
+    clear: right;
+}
+div p:nth-of-type(4) {
+    clear: left;
+}

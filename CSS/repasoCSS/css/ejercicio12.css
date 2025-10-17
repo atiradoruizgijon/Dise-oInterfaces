@@ -6,8 +6,7 @@ header {
     padding: 20px;
 }
 main ul:nth-child(5) {
-    list-style-type: none;
-    padding: 0px;
+    list-style-image: url(contact-book.png);
 }
 main ul:nth-child(7) {
     list-style-type: none;
@@ -33,7 +32,6 @@ main ul:nth-child(9) li a {
     text-decoration: none;
     padding: 2px;
 }
-
 footer {
     background-color: green;
     text-align: center;

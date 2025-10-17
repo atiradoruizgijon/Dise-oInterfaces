@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+            /* Con esto, si pongo 200px de withd, va a ser 200px, no 230 sumando padding y borde */
+            box-sizing: border-box;
+        }
+        /* Se aplica al padre */
+        h1{
+            margin-top: 50px;
+        }
+        .header {
+            background-color: blueviolet;
+            height: 100px;
+            /* Solucion 1 de colapso de margenes entre padre e hijo */
+            /* Poniendole un padding minusculo, ya se aplica el margen dentro del header */
+            /* padding: 0.1px; */
+            /* Solucion 2, poner un borde que ni se note */
+            border-top: 0.1px solid blueviolet;
+        }
+        .box{
+            background-color: rgb(112, 196, 169);
+            height: 300px;
+            width: 500px;
+            /* para centrar */
+            margin: 0 auto;
+            /* o tambien: */
+            /* margin-left: auto;
+            margin-right: auto; */
+            /* o tambien, que es nuevo */
+            /* margin-inline: auto; */
+
+            border: 2px solid black;
+        }
+        /* Colapso de márgenes margin collapse*/
+        .box1 {
+            margin-bottom: 100px;
+        }
+        .box2 {
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>HEADER</h1>
+    </header>
+
+    <div class="box box1">DIV 1</div>
+    <div class="box box2">DIV 2 </div>
+</body>
+</html>
