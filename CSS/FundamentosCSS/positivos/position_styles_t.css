@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    height: 200vh;
+}
+.box {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    font-size: 1.2rem;
+    /* Para centrar en vertical el texto */
+    line-height: 150px;
+    text-align: center;
+}
+.container {
+    border: dashed 2px black;
+    margin: 50px;
+    height: 650px;
+    width: 750px;
+    position: relative;
+}
+.first {
+    background-color: firebrick;
+    /* Static: el elemento se coloca según el flujo HTML e ignora z-index */
+    position: static;
+    /* Static ignora estos valores */
+    left: 300px;
+    top: 300px;
+}
+.second {
+    background-color: limegreen;
+    /* 
+    relative: hace uso de top, left, etc. Y z-index.
+    El desplazamiento se realiza desde la posición que le
+    corresponde al elemento según el flujo html
+    */
+    position: relative;
+    left: 150px;
+    top: 150px;
+}
+.third {
+    background-color: dodgerblue;
+    /* 
+    absolute lo saca del flujo, haciendo que el elemento de abajo suba.
+    Y los valores top, right, etc los toma en referencia a la página
+    en general, no relativo a su antigüa posición.
+    SI EL ASCENDIENTE/PARIENTE, puede ser el padre u otros,
+    es 'relative' toma como referencia a ese contenedor
+    y no podrá salir (a menos que le demos los valores para ello
+    como left: -20px; en negativo) 
+    */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.fourth {
+    background-color: goldenrod;
+    /* fixed: activa top, bottom, etc.
+    fija al elemento en pantalla e ignora el posible scroll, lo saca del flujo HTML.
+    El desplazamiento se realiza con respecto al borde del navegador siempre */
+    position: fixed;
+    right: 0;
+    top: 500px;
+}
+.fifth {
+    background-color: blueviolet;
+    position: sticky;
+    top: 0px;
+}

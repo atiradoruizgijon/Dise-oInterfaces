@@ -1,0 +1,12 @@
+.columns {
+    columns: 10vw auto;
+}
+.threecolumns {
+    columns: 3;
+    column-gap: 2em;
+}
+html {
+    background-image: linear-gradient(90deg, #a8bfff, #3f2b96);
+    background-repeat: no-repeat;
+    height: 100vh;
+}
