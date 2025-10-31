@@ -4,6 +4,29 @@
     margin: 0;
     font-family: sans-serif;
 }
+html {
+    height: 100vh;
+    background-image: linear-gradient(0deg, lightblue, white);
+    background-repeat: no-repeat;
+}
+.gradiente {
+    width: 100%;
+    padding-bottom: 4em;
+    font-size: 2em;
+    margin-top: 60px;
+    color: grey;
+    text-align: center;
+    font-weight: 900;
+    background-image: linear-gradient(90deg, red, yellow, green, blue, purple);
+}
+.gradiente__conico {
+    width: 150px;
+    height: 150px;
+    display: block;
+    background-image: conic-gradient(red, yellow, green, blue, purple);
+    border-radius: 400px;
+    margin: 10px auto;
+}
 .title {
     text-shadow: 2px 2px rgba(0, 0, 0, 0.200);
     margin: 20px 0;
@@ -48,21 +71,22 @@ a {
     position: absolute;
     top: 10%;
     right: 23%;
-    box-shadow: 3px 3px 0px rgb(85, 91, 255), 6px 6px 0px rgb(31, 193, 27),
-    9px 9px 0px rgb(255, 156, 85), 12px 12px 0px     rgb(255, 85, 85),
-    -3px 3px 0px rgb(85, 91, 255), -6px 6px 0px rgb(31, 193, 27),
-    -9px 9px 0px rgb(255, 156, 85), -12px 12px 0px     rgb(255, 85, 85),
-    3px -3px 0px rgb(85, 91, 255), 6px -6px 0px rgb(31, 193, 27),
-    9px -9px 0px rgb(255, 156, 85), 12px -12px 0px     rgb(255, 85, 85),
-    -3px -3px 0px rgb(85, 91, 255), -6px -6px 0px rgb(31, 193, 27),
-    -9px -9px 0px rgb(255, 156, 85), -12px -12px 0px     rgb(255, 85, 85);
+    box-shadow: 
+    0px 0px 0px 3px rgb(85, 91, 255),
+    0px 0px 0px 6px rgb(31, 193, 27),
+    0px 0px 0px 9px rgb(255, 156, 85),
+    0px 0px 0px 12px rgb(255, 85, 85);
 }
 .cuadrado3 {
     width: 70px;
     height: 70px;
     position: absolute;
     top: 35%;
-    right: 20%;
+    right: 30%;
     border: blue 2px solid;
-    box-shadow: 5px -5px white, 7px -7px rgb(14, 205, 0), 12px -12px white, 14px -14px rgb(213, 213, 0);
+    box-shadow: 
+    8px -8px 0px -3px white, 8px -8px 0px 0px green,
+    16px -16px 0px -3px white, 16px -16px 0px 0px rgb(194, 197, 0),
+    24px -24px 0px -3px white, 24px -24px 0px 0px orange,
+    32px -32px 0px -3px white, 32px -32px 0px 0px rgb(255, 0, 0);
 }

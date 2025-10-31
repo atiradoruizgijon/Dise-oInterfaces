@@ -1,7 +1,17 @@
+@font-face {
+    font-family: SpaceG;
+    src: url(SpaceGrotesk-VariableFont_wght.ttf);
+}
 * {
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: SpaceG;
+}
+h1 {
+    text-align: center;
+    text-shadow: 8px 6px 10px rgba(0, 0, 0, 0.445);
+    font-size: 3em;
 }
 .img {
     border-radius: 500px;
@@ -23,7 +33,7 @@ p {
 a {
     color: white;
     text-decoration: none;
-    background-image: linear-gradient(90deg ,#3995e8, #e870ae);
+    background-image: linear-gradient(70deg ,#5705db 85%, #ffffff);
     margin: auto;
     display: block;
     width: fit-content;
