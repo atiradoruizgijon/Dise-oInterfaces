@@ -51,6 +51,10 @@ header {
     h1 {
         color: green;
     }
+    /* 
+    para dividir entre 3 exacto
+    width: calc(100%/3);
+    */
     .red {
         float: left;
         width: 33.333%;

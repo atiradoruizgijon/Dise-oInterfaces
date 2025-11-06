@@ -1,5 +1,5 @@
-.container {
-    
+.container > * {
+    height: 150px;
 }
 article {
     height: 300px;
@@ -29,6 +29,7 @@ article {
     }
 }
 @media (min-width: 576px) and (max-width: 992px) {
+
     .red {
         width: 50%;
         float: left;

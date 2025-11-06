@@ -1,0 +1,79 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    border:  2px dashed black;
+    max-width: 1000px;
+    height: 650px;
+    margin: 50px;
+    width: 90%;
+    /* Contenedor flex */
+    /* display: flex; */
+
+    /* Hace que el contenedor flex se comporte como un elemento inline */
+    display: inline-flex;
+
+    /*
+    Propiedad por defecto nowrap
+    Hace que cuando un elemento hijo del contenedor
+    flex no tenga espacio, lo mande hacia abajo,
+    divide el contenedor segun las lineas flex
+    que necesite. Si tenemos 600px  de
+    altura lo dividira a 300px y tendremos 
+    dos lineas flex en cada una.
+    
+    flex-wrap: wrap;
+    */
+
+    /* 
+    flex-flow, version compacta de flex-wrap y flex-direction
+    */
+
+    /* Alineación en el eje principal (por defecto el vertical) */
+    /* justify-content: space-evenly; */
+    /* Alineación en el eje secundario */
+    /* align-items: baseline; */
+    /* el valor baseline alinea según el tamaño de texto
+    es decir, si tenemos varias letras de distinto
+    tamaño, se alinearan para que forme una linea el texto,
+    independientemente de como sea el contenedor del texto */
+
+    /* align-content, para esto hemos de tener activado wrap */
+    /* Alineación de las lineas flex, si tengo wrap */
+    align-content: center;
+    flex-wrap: wrap;
+}
+.item {
+    border: 2px solid black;
+    text-align: center;
+    line-height: 130px;
+    font-size: 2rem;
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+
+    /* Se ensanchan hasta que cubren el hueco sobrante*/
+    flex-grow: 0;
+    /* Capacidad de que se encojan, esta activado por defecto */
+    flex-shrink: 0;
+}
+.item1 {
+    background-color: lightblue;
+    /* align-self: center; */
+}
+.item2 {
+    background-color: lightpink;
+}
+.item3 {
+    background-color: lightgreen;
+    /* Se alinea el solo según le digamos, si queremos
+    especificamente alinearlo con otro valor */
+    /* align-self: center; */
+}
+.item4 {
+    background-color: lightgoldenrodyellow;
+    /* align-self: flex-end; */
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .picture {
+            background-color: bisque;
+            width: 500px;
+        }
+        .img {
+            /* max-width si quiero que no se extienda más allá del tamaño propio de la foto */
+            max-width: 100%;
+            display: block;
+        }
+        .text {
+            background-color: lightblue;
+            height: 300px;
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <div class="picture">
+        <img src="css/img/gorilla.jpg" alt="Gorilla">
+    </div>
+
+    <!-- <figure>
+        <img src="css/img/gorilla.jpg" alt="Gorilla">
+        <figcaption>Un Gorilla</figcaption>
+    </figure> -->
+
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sunt tempora, mollitia veniam nostrum deserunt accusantium molestias modi error odit neque ipsum perferendis eligendi quisquam temporibus soluta perspiciatis saepe! Enim?
+    </div>
+</body>
+</html>
