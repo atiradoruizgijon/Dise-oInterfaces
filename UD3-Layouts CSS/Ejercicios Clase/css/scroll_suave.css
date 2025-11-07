@@ -1,0 +1,55 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+.header {
+    background-color: purple;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.navbar {
+    height: fit-content;
+    display: flex;
+    justify-content: end;
+    margin-right: 3em;
+}
+.nav__button {
+    color: white;
+    padding: 30px 15px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+}
+.nav__button:hover {
+    color: purple;
+    background-color: white;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.section__title {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+    font-size: 6em;
+}
+.inicio {
+    background-image: url(img/kebab.jpg);
+}
+.rubik {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(213, 201, 20, 0.495)), url(img/rubik.jpg);
+}
+.contacto {
+    background-image: linear-gradient(180deg, rgb(222, 87, 20), rgb(14, 243, 193));
+}
