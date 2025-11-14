@@ -10,6 +10,7 @@
     height: 650px;
     margin: 50px;
     width: 90%;
+    flex-direction: column;
     /* Contenedor flex */
     /* display: flex; */
 
@@ -43,22 +44,35 @@
 
     /* align-content, para esto hemos de tener activado wrap */
     /* Alineación de las lineas flex, si tengo wrap */
-    align-content: center;
-    flex-wrap: wrap;
+    /* align-content: center;
+    flex-wrap: wrap; */
+
+    gap: 30px
+    ;
 }
 .item {
     border: 2px solid black;
     text-align: center;
-    line-height: 130px;
+    /* line-height: 130px; */
     font-size: 2rem;
     padding: 10px;
-    height: 150px;
+    height: 120px;
     width: 150px;
-
-    /* Se ensanchan hasta que cubren el hueco sobrante*/
+    
+    /* Se ensanchan hasta que cubren el hueco sobrante, esta desactivada por defecto*/
     flex-grow: 0;
     /* Capacidad de que se encojan, esta activado por defecto */
     flex-shrink: 0;
+
+    /* 
+    flex-basis: tamaño base de los elementos flex ; 
+    por defecto tiene 100px, pero si el contenido sobrepasa eso,
+    cogera el width. Si no tenemos width puesto, cogera el max-content
+
+    Es el tamaño base en el eje principal, es decir, si cambiamos a
+    columna, pasará a ser altura.
+    */
+    flex-basis: 100px;
 }
 .item1 {
     background-color: lightblue;
@@ -66,14 +80,41 @@
 }
 .item2 {
     background-color: lightpink;
+    /* flex-grow: 2; */
+    order: -1;
 }
 .item3 {
     background-color: lightgreen;
     /* Se alinea el solo según le digamos, si queremos
     especificamente alinearlo con otro valor */
     /* align-self: center; */
+    /* margin: auto; */
+    order: -1;
 }
 .item4 {
+    /* flex-grow: 1; */
     background-color: lightgoldenrodyellow;
     /* align-self: flex-end; */
 }
+
+/* 
+    JERARQUÍA DE TAMAÑOS EN CSS
+    
+    max-width > flex-basis > width/height > max-content
+    
+    max-content (la frase entera, min-content la palabra más larga)
+*/
+
+/* 
+flex >>> la forma compacta de grow shrink y basis
+
+flex: 1 0 200px; >>>> flex-grow: 1; flex-shrink: 0; flex-shrink 200px;
+
+si omito algunos valores...
+
+flex: 200px; >>> flex: 1 1 200px;
+flex: 1; >>> flex: 1 1 0;
+
+flex: auto; le aplica lo mismo a todos
+
+*/
