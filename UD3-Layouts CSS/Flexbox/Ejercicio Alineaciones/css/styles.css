@@ -32,9 +32,27 @@
 }
 .hero__article:last-child {
     align-self: flex-end;
+    /* 
+    Padding para que las dimensiones sean correctas y el texto
+    central se centre bien
+     */
+    padding: 2em 1em;
     margin-right: 4em;
     margin-bottom: 4em;
 }
 .article__text {
     font-weight: normal;
+}
+.hero__article > h1 {
+    color: #daa520;
+    text-shadow: 2px 2px 3px black;
+}
+.hero__article:nth-child(2) > p {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+@media screen and (max-width: 576px) {
+    .hero__article {
+        justify-content: center;
+    }
 }
