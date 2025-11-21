@@ -39,6 +39,7 @@
     padding: 2em 1em;
     margin-right: 4em;
     margin-bottom: 4em;
+    background-color: #daa520;
 }
 .article__text {
     font-weight: normal;
@@ -52,7 +53,26 @@
     text-shadow: 2px 2px 3px black;
 }
 @media screen and (max-width: 576px) {
+    .hero {
+        flex-direction: column;
+    }
     .hero__article {
         justify-content: center;
     }
-}
+    .descuento {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .hero__article:first-child {
+        align-self: center;
+    }
+    .hero__article:nth-child(2) {
+        align-self: center;
+        margin: 0;
+    }
+    .hero__article:last-child {
+        align-self: center;
+        margin: 0;
+        margin-bottom: 1em;
+    }
+    }
