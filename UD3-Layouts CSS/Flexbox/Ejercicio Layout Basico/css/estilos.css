@@ -2,16 +2,112 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'JetBrains Mono';
+    color: white;
 }
-.container-main {
+a {
+    text-decoration: none;
+}
+body {
+    background-image: linear-gradient(to right, #d6b615, #ebe3bb);
+}
+.container {
     max-width: 1000px;
+    min-width: 400px;
+    width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 .header {
     height: 100px;
     background-color: #152c55;
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__title {
+    margin-left: 1em;
+    font-weight: 300;
+}
+.header__nav {
+    margin-right: 1em;
+    font-weight: 100;
+}
+.container-main {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    height: 50vh;
+}
+.container-servicios {
+    width: 60%;
+    flex: 1 1;
+}
+.bloque-servicios {
+    display: flex;
+}
+.bloque-servicios__servicio {
+    text-align: center;
+    padding: 20px 0;
+    flex: 1 1;
+}
+.bloque-servicios__servicio--elem1 {
+    background-color: #aa6639;
+}
+.bloque-servicios__servicio--elem2 {
+    background-color: #4d648d;
+}
+.bloque-servicios__servicio--elem3 {
+    background-color: #7688a9;
+}
+.aside {
+    background-color: #d4956a;
+    width: 40%;
+    padding: 25px;
+    height: fit-content;
+}
+.aside__title {
+    text-align: center;
+    font-weight: normal;
+}
+.aside > ul {
+    margin-top: 10px;
+}
+.aside li::marker {
+    color: black;
 }
 .footer {
     height: 100px;
     background-color: #2d4571;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 800px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header__title {
+        margin: 0;
+    }
+    .header__nav {
+        margin: 0;
+    }
+    .container-main {
+        flex-direction: column;
+    }
+    .aside {
+        width: 100%;
+    }
+    .container-servicios {
+        width: 100%;
+    }
+    .bloque-servicios {
+        flex-direction: column;
+    }
 }
