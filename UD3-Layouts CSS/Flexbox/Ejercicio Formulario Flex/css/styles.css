@@ -5,6 +5,9 @@
     padding: 0;
     font-family: 'Raleway';
 }
+:root {
+    --sombrita: 6px 6px 10px rgb(0, 0, 0, 0.6);
+}
 .contact {
     height: 100vh;
     background-image: linear-gradient(to right, rgba(0, 0, 255, 0.332), rgba(238, 130, 238, 0.316)) ,url(img/fondo-montaña.jpg);
@@ -25,11 +28,22 @@
     flex-direction: column;
     gap: 1em;
 }
+.contact__header {
+    display: flex;
+    gap: 2em;
+}
+.contact__header > div {
+    width: 50%;
+} 
+.contact__header > div > input {
+    width: 58.5%;
+} 
 .contact__legend {
     width: 100%;
     font-weight: bold;
     font-size: 2em;
     text-align: center;
+    text-shadow: var(--sombrita);
 }
 .contact__field {
     display: flex;
@@ -50,6 +64,7 @@
     min-height: 100px;
     max-height: 200px;
 }
+/* ::placeholder  */
 .contact__send {
     width: 100%;
     display: flex;
@@ -66,5 +81,16 @@
 @media screen and (max-width: 768px) {
     .contact__btn {
         flex: 1;
+    }
+    .contact__header {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .contact__header > div {
+        width: 100%;
+    } 
+    .contact__header > div > input {
+        width: 80%;
     }
 }
