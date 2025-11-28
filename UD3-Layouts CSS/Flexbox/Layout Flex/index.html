@@ -1,22 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Layout Flex</title>
 </head>
+
 <body>
+    <!-- Header -->
+
     <header class="header">
         <nav class="header__nav">
-            <a href="" class="nav__btt">Inicio</a>
-            <a href="" class="nav__btt">Planes</a>
-            <a href="" class="nav__btt">Trabajos</a>
-            <a href="" class="nav__btt">Contacto</a>
+            <i class="fas fa-code"></i>
+            <a href="#" class="nav__btt">Inicio</a>
+            <a href="#" class="nav__btt">Planes</a>
+            <a href="#" class="nav__btt">Trabajos</a>
+            <a href="#" class="nav__btt">Contacto</a>
         </nav>
-        <figure class="header__figure">
-            <img class="figure__img" src="" alt="">
-        </figure>
+        <div class="header__hero">
+            <figure class="hero__figure">
+                <img class="figure__img" src="css/assets/dev.svg" alt="Imagen Cabecera">
+            </figure>
+            <div class="header__tittles">
+                <h1 class="hero__title hero__title-h1">Curso de Desarrollo FrontEnd</h1>
+                <h3 class="hero__title hero__title-h3">HTML5, CSS3, JavaScript, React, Sass, ...</h3>
+            </div>
+        </div>
     </header>
+
+    <!-- Quienes Somos -->
+
+    <section class="section">
+        <div class="section__container-text">
+            <h2 class="section__tittle">¿Quiénes somos?</h2>
+
+            <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis libero dolorum ea ab
+                harum in impedit excepturi ducimus! Molestias aliquam libero ducimus! Itaque, quisquam odit possimus
+                maxime modi quibusdam architecto fugiat consectetur recusandae veritatis blanditiis quos nemo cum
+                aspernatur, sed sunt voluptatum. Minima eos eius rerum consequatur tempora dolor laboriosam repellat
+                soluta iste, ipsam consectetur hic laborum. Libero molestias nulla odio</p>
+            <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis libero dolorum ea ab
+                harum in impedit excepturi ducimus! Molestias aliquam libero ducimus! Itaque, quisquam odit possimus
+                maxime modi quibusdam architecto fugiat consectetur recusandae veritatis blanditiis quos nemo cum
+                aspernatur, sed sunt voluptatum. Minima eos eius rerum consequatur tempora dolor laboriosam repellat
+                soluta iste, ipsam consectetur hic laborum. Libero molestias nulla odio</p>
+
+            <a class="section__btt" href="#">Únete al curso</a>
+        </div>
+        <figure class="section__figure">
+            <img class="figure__img" src="css/assets/people.svg" alt="Imagen de fotos de gente">
+        </figure>
+    </section>
+
+    <!-- Planes de formación -->
+
+    <main class="main">
+        <h2 class="main__tittle">Planes de formación</h2>
+
+        <div class="main__card-container">
+            <!-- card1 -->
+            <div class="main__card">
+                <figure class="card__figure">
+                    <img src="css/assets/card1.jpg" alt="Imagen Card" class="figure__img figure__img-card">
+                </figure>
+                <div class="card__text-container">
+                    <h3 class="card__tittle">Plataforma educativa digital</h3>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit culpa ea velit modi reprehenderit amet vero porro aut quia ratione maiores quos excepturi consequatur beatae repellat perferendis aliquid, dolore quod!</p>
+                    <a class="card__btt" href="#">Entra ahora</a>
+                </div>
+            </div>
+            <!-- card2 -->
+            <div class="main__card">
+                <figure class="card__figure">
+                    <img src="css/assets/card2.jpg" alt="Imagen Card" class="figure__img figure__img-card">
+                </figure>
+                <div class="card__text-container">
+                    <h3 class="card__tittle">Clases 100% online o semipresenciales</h3>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nostrum aspernatur soluta magni deleniti voluptates, rerum, ut ad alias veniam dolor sit iusto quam esse accusamus! Saepe, laboriosam. Totam, voluptatem.</p>
+                    <a class="card__btt" href="#">Entra ahora</a>
+                </div>
+            </div>
+            <!-- card3 -->
+            <div class="main__card">
+                <figure class="card__figure">
+                    <img src="css/assets/card3.jpg" alt="Imagen Card" class="figure__img figure__img-card">
+                </figure>
+                <div class="card__text-container">
+                    <h3 class="card__tittle">Tutorías personalizadas y cursos internsivos</h3>
+                    <p class="card__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae at voluptate veritatis dolor sint eius harum quae fuga fugiat illo, quisquam qui. Expedita laborum quidem quam consectetur. Nihil, placeat omnis.</p>
+                    <a class="card__btt" href="#">Entra ahora</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- intermedio -->
+    <article class="article">
+        <h1 class="article__tittle">Hacemos tu sueño realidad</h1>
+    </article>
+    <!-- nuestro trabajo -->
+    <section class="section-trabajo">
+        <h1 class="section__tittle">Nuestro trabajo</h1>
+        <div class="section__gallery">
+            <figure class="gallery__figure">
+                <img class="figure__img-gallery" src="css/assets/img1.jpg" alt="Imagen de galeria">
+            </figure>
+            <figure class="gallery__figure">
+                <img class="figure__img-gallery" src="css/assets/img2.jpg" alt="Imagen de galeria">
+            </figure>
+            <figure class="gallery__figure">
+                <img class="figure__img-gallery" src="css/assets/img3.jpg" alt="Imagen de galeria">
+            </figure>
+            <figure class="gallery__figure">
+                <img class="figure__img-gallery" src="css/assets/img4.jpg" alt="Imagen de galeria">
+            </figure>
+            <figure class="gallery__figure">
+                <img class="figure__img-gallery" src="css/assets/img5.jpg" alt="Imagen de galeria">
+            </figure>
+            <figure class="gallery__figure">
+                <img class="figure__img-gallery" src="css/assets/img6.jpg" alt="Imagen de galeria">
+            </figure>
+        </div>
+    </section>
+    <article class="article-expertos">
+        <h1 class="article__tittle-expertos">Somos expertos en:</h1>
+        <div class="article__iconos-frontend">
+            <div class="iconos__container">
+                <figure class="iconos__figure">
+                    <img src="css/assets/html-5.svg" alt="Icono HTML" class="figure__img-frontend">
+                </figure>
+                <figure class="iconos__figure">
+                    <img src="css/assets/javascript.svg" alt="Icono JS" class="figure__img-frontend">
+                </figure>
+            </div>
+            <div class="iconos__container">
+                <figure class="iconos__figure">
+                    <img src="css/assets/css-3.svg" alt="Icono CSS" class="figure__img-frontend">
+                </figure>
+                <figure class="iconos__figure">
+                    <img src="css/assets/react.svg" alt="Icono React" class="figure__img-frontend">
+                </figure>
+            </div>
+        </div>
+    </article>
+    <!-- formulario de contacto -->
+    <section class="contacto">
+        <h2 class="contacto__tittle">Contacto</h2>
+        <form class="contacto__form">
+            <div class="form__input-container">
+                <label for="nombre">Nombre</label>
+                <input class="form__input" placeholder="Tu nombre" name="nombre" type="text">
+            </div>
+            <div class="form__input-container">
+                <label for="correo">Email</label>
+                <input class="form__input" placeholder="Tu correo electrónico" name="correo" type="text">
+            </div>
+            <div class="form__input-container">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form__textarea" name="mensaje"></textarea>
+            </div>
+            <a class="form__submit" href="#">ENVIAR</a>
+        </form>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <figure class="footer__figure">
+            <img class="figure__img" src="css/assets/mail.svg" alt="Imagen email">
+        </figure>
+        <h3>Síguenos</h3>
+        <nav class="footer__nav-redes">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </nav>
+        <nav class="footer__nav">
+            <a class="nav__btt" href="#">Inicio</a>
+            <a class="nav__btt" href="#">Sobre Nosotros</a>
+            <a class="nav__btt" href="#">Trabajos</a>
+        </nav>
+        <p class="footer__text">Derechos reservados	&copy; Desarrollo FrontEnd</p>
+    </footer>
 </body>
+
 </html>
