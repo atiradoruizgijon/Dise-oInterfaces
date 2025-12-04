@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    outline: 2px dashed black;
+    margin: 50px;
+    height: 600px;
+    width: 90%;
+    max-width: 800px;
+
+    /* aplica grid */
+    display: grid;
+    /* Tambien tenemos inline-grid */
+    
+    /* Le pido que haga 4 columnas de 200px */
+    /* grid-template-columns: repeat(4, 200px); */
+    /* Le pido que haga 3 filas de 150px */
+    /* grid-template-rows: repeat(3, 150px); */
+    /* tambien puedo hacer 200px 200xp 200px 200px que es lo mismo */
+    /* Si hago:
+    grid-template-columns: 150px repeat(4, 200px) 150px;
+    le estoy diciendo que me ponga 5 columnas,
+    una al principio y al final de 150px y entre medio 4 de 200px
+    */
+
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
+    /* 1fr divide todo por igual dentro del contenedor,
+    es decir, en este ejemplo vamos a tener 3 columnas
+    del mismo tamaño repartidos por el contenedor */
+    /* Si hago:
+    grid-template-columns: 2fr repeat(3, 1fr) 3fr;
+    la primera columna sera el doble, la del medio se repartira por igual, y la ultima el triple
+    */
+    /* 
+    Poner auto:
+    grid-template-columns: repeat(3, auto);
+    puede llegar a ser sustitutivo de 1fr, pero no es lo mismo,
+    hay que saber cuando usarlo.
+    */
+    /* 
+    Esto:
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    Y esto:
+    grid: repeat(3, 1fr) / repeat(4, 1fr);
+    es equivalente.
+    */
+    /* 
+    podemos darle nombre a las columnas y filas si no
+    nos gusta con numeros, de esta forma:
+    grid-template-columns: [uno] 1fr [dos] 1fr [tres] 1fr [cuatro] 1fr [cinco] 1fr;
+    */
+
+    /* grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr); */
+    grid-template-columns: repeat(4, 150px);
+    grid-template-rows: repeat(5, 100px);
+
+    /* separacion entre filas y columnas */
+    gap: 10px;
+    /* si solo las quiero en filas o solo en columnas:
+    row-gap: 30px;
+    column-gap: 30px;
+    */
+
+    /* COLOCACION DE LOS ELEMENTOS EN LA CELDA DEFINIDA: */
+    /* Se indica en lso elementos, es decir, en los hijos,
+    siendo el padre el contenedor grid */
+
+    /* Alineaciones en grid: */
+    /* justify-items: center;
+    align-items: center; */
+    /* la forma acortada es con place-items */
+
+    /* Alineacion de la cuadricula dentro del contenedor,
+    para esto, la cuadricula grid ha de ser mas pequeño
+    que el contenedor en el que esta aplicado. */
+    justify-content: center;
+    align-content: end;
+}
+.item {
+    border: 2px solid black;
+    font-size: 2rem;
+    font-weight: 700;
+    /* width: 100px;
+    height: 100px; */
+    padding: 10px;
+    line-height: 80px;
+    text-align: center;
+}
+.item1 {
+    background-color: chartreuse;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    /* versiones compactas: */
+    /* grid-column: 1 / 5;
+    grid-row: 1 / 2; */
+    /* 
+    row-start, column-start, row-end, column-end
+    grid-area: 1 / 1 / 2 / 5; */
+}
+.item2 {
+    background-color: firebrick;
+    grid-row: 2/6;
+    /* align-self tambien funciona con grid
+     align-self: flex-end; */
+}
+.item3 {
+    background-color: cornflowerblue;
+    grid-column: 2/5;
+    grid-row: 2/5;
+}
+.item4 {
+    background-color: deeppink;
+    grid-column: 2/5;
+}
