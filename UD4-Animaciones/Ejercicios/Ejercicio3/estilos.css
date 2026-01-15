@@ -35,6 +35,8 @@
     object-fit: cover;
 }
 
+/* transisione */
+
 .main:hover .fila__figure {
     transform: translateX(calc(1400px - 100px)) rotate(3turn);
 }
