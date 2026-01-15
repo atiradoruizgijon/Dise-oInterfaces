@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: lightblue;
+}
+.container {
+    outline: 2px dashed black;
+    margin: 50px auto;
+    height: 600px;
+    width: 90%;
+    max-width: 800px;
+    background-color: white;
+
+    display: grid;
+    /* Generación automática de las columnas */
+    /* Crea tantas columnas como quepan dentro del container con anchura de 200px */
+    /* grid-template-columns: repeat(auto-fill, 200px); */
+    
+    /* Como minimo 200px, como maximo 1fr */
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    /* Es parecido a flex wrap, si tiene el suficiente espacio
+    para que quepa una columna de 200px, subirá, si no, se creará otra
+    fila. */
+    
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+    
+    
+    /* Le digo que las filas que se crean automaticamente 
+    que sean de 150px de alto */
+    grid-auto-rows: 150px;
+}
+.item {
+    border: 2px solid black;
+    font-size: 2rem;
+    font-weight: 700;
+    /* width: 100px;
+    height: 100px; */
+    padding: 10px;
+    line-height: 80px;
+    text-align: center;
+}
+.item1 {
+    background-color: chartreuse;
+}
+.item2 {
+    background-color: firebrick;
+}
+.item3 {
+    background-color: cornflowerblue;
+}
+.item4 {
+    background-color: deeppink;
+}

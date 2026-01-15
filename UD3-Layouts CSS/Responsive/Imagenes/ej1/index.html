@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img {
+            margin: 100px auto;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Según el DPR del dispositivo: -->
+    <img srcset="img/turtle-500.jpg 1x, img/turtle-1000.jpg 2x, img/turtle-1500.jpg 3x"
+    src="img/turtle-500.jpg"
+    alt="Tortuga">
+    
+
+    <!-- Según la anchura de la pantalla usando sizes: -->
+    <img srcset="img/turtle-500.jpg 500w, img/turtle-1000.jpg 1000w, img/turtle-1500.jpg 1500w"
+    src="img/turtle-500.jpg"
+    sizes="
+    (max-width: 500px) 400px,
+    (max-width: 1000px) 800px, 1200px"
+
+    alt="Tortuga">
+    <!-- Si el tamaño de de menos de 500px, carga la de 400px
+    si es de menos de 1000 cargará la de 800px, y en cualquier caso, 1200px -->
+</body>
+</html>
