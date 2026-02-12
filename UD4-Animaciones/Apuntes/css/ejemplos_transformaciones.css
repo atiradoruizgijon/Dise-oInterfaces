@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container {
+    outline: 2px solid darkslategray;
+    margin: 100px auto;
+    height: 600px;
+    width: 800px;
+    padding: 10px;
+}
+
+.element {
+    background-color: chartreuse;
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+    font-size: 2rem;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* TRANSLATE */
+
+.translate {
+    /* transform: translate(300px, 100px); */
+    /* si pongo 100% se va a desplazar hacia ese eje el 100% de su tamaño
+    es decir, si mide 150px, se va a desplazar 150px */
+    /* transform: translateX(100%); */
+    
+    /* No puedo hacer esto: */
+    /* transform: translateX(100%); */
+    /* transform: translateY(100px); */
+    /* No se aplican las dos, solo la ultima. Esto en caso de que
+    quiera hacer dos translate claro */
+    
+    
+    /* ejemplo de transición: */
+    transition: 0.4s;
+}
+
+/* necesitamos un TRIGGER, un desencadenante, en este caso un hover */
+.container:hover .translate {
+    /* estado final: */
+    transform: translate(300px, 100px);
+}
+
+.rotate {
+    transition: 1s;
+}
+
+.container:hover .rotate {
+    transform: rotate(1turn);
+    /* transform: rotate(90deg); */
+    /* Puedo cambiar el origen desde el que rota, rotar o cualquier otra propiedad */
+    /* transform-origin: bottom right; */
+    border-radius: 100%;
+    border: 5px solid black;
+}
+
+.mixed {
+    /* si ponemos 1s 1s, el segundo valor es un delay
+    es decir, cuando se activa el trigger, tarda un segundo
+    en empezar   */
+    transition: 1s 1.6s;
+}
+
+.container:hover .mixed {
+    /* 360deg == 1turn */
+    /* el orden importa, esto da dos resultados diferentes: */
+    /* transform: rotate(360deg) translate(400px, -200px); */
+    transform: translate(400px, -200px) rotate(360deg);
+}
+
+.scale {
+    transition: transform 1s ease-in-out, background-color 4s;
+    transform: scale(60%);
+}
+/* transition: all 1s; lo que hace es animar tambien
+otras propiedades, como el color.
+
+Por defecto es all, si quiero solo cambiar una cosa,
+la especifico en transition.*/
+.container:hover .scale {
+    transform: scale(200%);
+    background-color: tomato;
+}
+
+.skew {
+    transition: 1s;
+}
+
+.container:hover .skew {
+    transform: skew(0deg, 10deg);
+}
+
+/* realmente transition es un shortcut de otras cuatro propiedades:
+transition-property(all por defecto), transition-duration(se puede poner en s o ms),
+transition-delay, transition-timing-function
+*/

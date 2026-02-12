@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.nav {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.boton {
+    padding: 10px 20px;
+    background-color: tomato;
+    width: fit-content;
+    display: block;
+    color: white;
+    transition: all 1s;
+}
+
+.boton:active {
+    transform: scale(1.4);
+}
+
+.cuadrado {
+    margin: 25px auto;
+    font-size: 1.6rem;
+    padding: 5px;
+    font-weight: bold;
+    color: white;
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    transition: all 1s;
+}
+
+.cuadrado:target {
+    transform: rotate(1turn) scale(1.5);
+    background-color: blue;
+}

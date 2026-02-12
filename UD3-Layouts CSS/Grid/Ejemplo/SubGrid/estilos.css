@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.grid-container {
+    margin: 100px auto;
+    border: 5px solid black;
+    background-color: darkkhaki;
+    
+    width: 80%;
+    max-width: 1000px;
+
+    display: grid;
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: [line1] 1fr [line2] 1fr [line3] 1fr [line4] 1fr [line5] 1fr [line6];
+    grid-template-rows: repeat(4, 150px);
+    gap: 5px;
+}
+
+.grid-item {
+    background-color: cornflowerblue;
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 2;
+    
+    /* Creamos grid anidado. Ojo, no es un subgrid, no es exactamente lo mismo */
+    display: grid;
+    /* grid-template-columns: repeat(2, 500px); */
+    gap: 5px;
+
+    /* Prueba subgrid, es un valor, no una propiedad */
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    /* ahora, con subgrid, al darle width a un hijo,
+    la columna del padre aunmenta de tamaño, no se desborda.
+    Antes solo se salía. Y tambien hereda cosas como el gap */
+
+    /* En general, subgrid es un grid totalmente dependiente del grid padre,
+    hereda dimensiones, gap y lineas/etiquetas. 
+    
+    Mientras que un grid anidado es independiente*/
+}
+
+.grid-item1 {
+    background-color: lemonchiffon;
+    grid-column: line1 / line2;
+    grid-row: 1 / 2;
+}
+.grid-item2 {
+    background-color: tomato;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    /* ahora, con subgrid, al darle width a un hijo,
+    la columna del padre aunmenta de tamaño, no se desborda.
+    Antes solo se salía. Y tambien hereda cosas como el gap */
+    width: 300px;
+}
+
+.grid-item1, .grid-item2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+}

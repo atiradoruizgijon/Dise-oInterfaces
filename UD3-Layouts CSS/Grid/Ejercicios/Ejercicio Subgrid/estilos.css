@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.card-container {
+    margin: 100px auto;
+
+    width: 80%;
+    max-width: 1600px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    /* lo añado al utilizar subgrid */
+    /* poniendo max-content teniendo el subgrid,
+    hace que la altura de la fila que contiene el parrafo
+    sea la altura del parrafo mas largo,
+    haciendo que tengan todas las cards el mismo tamaño */
+    grid-template-rows: repeat(4, max-content);
+    gap: 10px;
+}
+
+.card__figure {
+    width: 100%;
+    height: 200px;
+
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+/* para hacer las imagenes responsive */
+.card__img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    /* object-position: center; */
+}
+
+/* Botones */
+.card__btn {
+    background-color: darkblue;
+    border-radius: 5px;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Grid anidado */
+.card {
+    grid-row: 1 / 5;
+    display: grid;
+    /* grid-auto-rows: max-content; */
+    /* gap: 1rem; */
+
+    grid-template-rows: subgrid;
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 5px;
+}
